@@ -1,6 +1,8 @@
-/* html{
-    $colorPrimario:#E23636;
-} */
+:root{
+    --colorPrimario:#E23636;
+    --colorFondo:#f4f4f4;
+    --colorTarjeta:#FFFFFF;
+} 
 
 *{
     margin: 0;
@@ -13,26 +15,26 @@ html{
 }
 
 body{
-    background-color: #F4F4F4;
+    background-color: var(--colorFondo);
 }
 
 header
 {
-    background-color: #E23636;
-}
-
-nav{
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a{
-    color: white;
-    margin: 25px;
-    text-decoration: none;
-    font-size: 24px;
+    background-color: var(--colorPrimario);
+    
+    nav{
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            color: white;
+            margin: 25px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    }
 }
 
 main h1{
@@ -46,6 +48,25 @@ main h1{
 .tarjetaIntroduccion{
     width: 1000px;
     height: 304px;
-    background-color: #FFFFFF;
+    background-color: var(--colorTarjeta);
     margin: 62px auto 25px auto;
+    padding: 30px;
+
+    div{
+        h2{
+            color: var(--colorPrimario);
+            font-size: 32px;
+            font-weight: lighter;
+            border-bottom: 4px solid var(--colorPrimario);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: lighter;
+            line-height: 1.8;
+            /* font-family: 'Comic'; */
+        }
+    }
 }
