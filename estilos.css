@@ -1,0 +1,51 @@
+/* html{
+    $colorPrimario:#E23636;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+header
+{
+    background-color: #E23636;
+}
+
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+main h1{
+    margin: 62px 0 0 0;
+    text-align: center;
+    color: #E23636;
+    font-family: Avengeance;
+    font-size: 64px;
+}
+
+.tarjetaIntroduccion{
+    width: 1000px;
+    height: 304px;
+    background-color: #FFFFFF;
+    margin: 62px auto 25px auto;
+}
