@@ -37,36 +37,51 @@ header
     }
 }
 
-main h1{
-    margin: 62px 0 0 0;
-    text-align: center;
-    color: #E23636;
-    font-family: Avengeance;
-    font-size: 64px;
-}
+main {
 
-.tarjetaIntroduccion{
-    width: 1000px;
-    height: 304px;
-    background-color: var(--colorTarjeta);
-    margin: 62px auto 25px auto;
-    padding: 30px;
+    h1{
+        margin: 62px 0 0 0;
+        text-align: center;
+        color: #E23636;
+        font-family: Avengeance;
+        font-size: 64px;
+    }
 
-    div{
-        h2{
-            color: var(--colorPrimario);
-            font-size: 32px;
-            font-weight: lighter;
-            border-bottom: 4px solid var(--colorPrimario);
-            margin-bottom: 12px;
-            line-height: 1.5;
+
+    .tarjetaIntroduccion{
+        width: 1000px;
+        height: 304px;
+        background-color: var(--colorTarjeta);
+        margin: 62px auto 25px auto;
+        padding: 30px;
+        display: flex;
+        gap: 23px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        .tarjetaIntroduccion-contenido{
+            h2{
+                color: var(--colorPrimario);
+                font-size: 32px;
+                font-weight: lighter;
+                border-bottom: 4px solid var(--colorPrimario);
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 1.8;
+                /* font-family: 'Comic'; */
+            }
         }
 
-        p{
-            font-size: 18px;
-            font-weight: lighter;
-            line-height: 1.8;
-            /* font-family: 'Comic'; */
+        .tarjetaIntroduccion-imagenes{
+            img{
+                width: 240px;
+                border-radius: 5px;
+                margin-top: 50px;
+            }
         }
     }
 }
