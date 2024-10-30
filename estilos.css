@@ -39,7 +39,7 @@ header
 }
 
 main {
-
+    
     h1{
         margin: 62px 0 0 0;
         text-align: center;
@@ -88,9 +88,9 @@ main {
     
     .tarjetaHistoria{
         width: 1000px;
-        height: 304px;
+        /* height: 304px; */
         background-color: var(--colorTarjeta);
-        margin: 62px auto 25px auto;
+        margin: 25px auto 25px auto;
         padding: 30px;
         display: flex;
         gap: 23px;
@@ -105,7 +105,12 @@ main {
             line-height: 1.5;
         }
 
+
         .tarjetaHistoria-contenido{
+            /* columns: 2; */
+            display: flex;
+            flex-direction: column;
+            width: 80%;
             h3{
                 font-size: 32px;
                 color: var(--colorSecundario);
@@ -118,13 +123,28 @@ main {
                 line-height: 1.8;
                 /* font-family: 'Comic'; */
             }
+
+            .cajas{
+                columns: 2;
+                /* column-gap: 10px; */
+                .cajita{
+                    /* width: 260px; */
+                    /* height: 177px; */
+                    background-color: var(--colorTarjeta);
+                    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+                    margin-bottom: 20px;
+                    padding: 20px;                    
+                }
+            }
         }
 
         .tarjetaHistoria-imagenes{
+            width: 240px;
+            margin-top: 50px;
             img{
-                width: 240px;
+                width: 100%;
                 border-radius: 5px;
-                margin-top: 50px;
+                margin-top: 10px;
             }
         }
     }
