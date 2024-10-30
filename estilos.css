@@ -13,6 +13,8 @@
 
 html{
     font-family: sans-serif;
+    scroll-behavior: smooth;
+    /* animation-duration: 10s; */
 }
 
 body{
@@ -22,13 +24,14 @@ body{
 header
 {
     background-color: var(--colorPrimario);
-    
+    position: fixed;
+    width: 100%;
+    top: 0;
     nav{
         height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
         a{
             color: white;
             margin: 25px;
@@ -39,7 +42,7 @@ header
 }
 
 main {
-    
+    margin-top: 162px;
     h1{
         margin: 62px 0 0 0;
         text-align: center;
@@ -64,9 +67,17 @@ main {
                 color: var(--colorPrimario);
                 font-size: 32px;
                 font-weight: lighter;
-                border-bottom: 4px solid var(--colorPrimario);
+                /* border-bottom: 4px solid var(--colorPrimario); */
                 margin-bottom: 12px;
                 line-height: 1.5;
+            }
+
+            hr{
+                background-color: var(--colorPrimario);
+                height: 5px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 12px;
             }
 
             p{
@@ -100,11 +111,18 @@ main {
             color: var(--colorPrimario);
             font-size: 32px;
             font-weight: lighter;
-            border-bottom: 4px solid var(--colorPrimario);
+            /* border-bottom: 4px solid var(--colorPrimario); */
             margin-bottom: 12px;
             line-height: 1.5;
         }
 
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
 
         .tarjetaHistoria-contenido{
             /* columns: 2; */
@@ -127,6 +145,7 @@ main {
             .cajas{
                 columns: 2;
                 /* column-gap: 10px; */
+                margin-top: 12px;
                 .cajita{
                     /* width: 260px; */
                     /* height: 177px; */
