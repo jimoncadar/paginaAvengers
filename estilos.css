@@ -173,3 +173,13 @@ main {
     
     
 }
+
+footer{
+    background-color: var(--colorSecundario);
+    padding: 20px;
+
+    h2{
+        color: white;
+        text-align: center;
+    }
+}
