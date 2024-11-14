@@ -15,6 +15,7 @@ html{
     font-family: sans-serif;
     scroll-behavior: smooth;
     /* animation-duration: 10s; */
+    position: relative;
 }
 
 body{
@@ -168,18 +169,157 @@ main {
         }
     }
     
-    
+    .tarjetaUnionHeroes{
+        width: 1000px;
+        background-color: var(--colorTarjeta);
+        margin: 25px auto;
+        padding: 30px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        display: flex;
+        gap: 23px;
 
-    
+        h2{
+            color: var(--colorPrimario);
+            font-size: 32px;
+            font-weight: lighter;
+            /* border-bottom: 4px solid var(--colorPrimario); */
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .tarjetaUnionHeroes-contenido{
+            width: 80%;
+        }
+
+        .tarjetaUnionHeroes-imagenes{
+            width: 240px;
+            margin-top: 95px;
+            img{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .tarjetaGrupoConstanteCambio{
+        width: 1000px;
+        background-color: var(--colorTarjeta);
+        margin: 25px auto 90px auto;
+        padding: 30px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+        display: flex;
+        gap: 23px;
+
+        h2{
+            color: var(--colorPrimario);
+            font-size: 32px;
+            font-weight: lighter;
+            /* border-bottom: 4px solid var(--colorPrimario); */
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .tarjetaGrupoConstanteCambio-contenido{
+            width: 80%;
+        }
+
+        .tarjetaGrupoConstanteCambio-imagenes{
+            width: 240px;
+            margin-top: 50px;
+            img{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        }
+
+        
+    }
     
 }
 
 footer{
     background-color: var(--colorSecundario);
     padding: 20px;
-
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+   
     h2{
         color: white;
         text-align: center;
     }
+}
+
+
+.fondoGaleria{
+    background-color: rgb(223, 192, 192);    
+    .galeria{
+        display: grid;
+        grid-template-areas: 
+        "img1 img1 img2 img2 img3 img3 img3 img3"
+        "img1 img1 img2 img2 img3 img3 img3 img3"
+        "img4 img4 img4 img4 img3 img3 img3 img3"
+        "img4 img4 img4 img4 img3 img3 img3 img3"
+        "img5 img5 img5 img5 img6 img6 img6 img6"
+        "img5 img5 img5 img5 img6 img6 img6 img6"
+        "img5 img5 img5 img5 img6 img6 img6 img6";
+    
+        
+        width: 90%;
+    /* height: 90%; */
+    margin: 100px auto 80px auto;
+    gap: 10px;
+    padding: 10px;
+
+    div .img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        box-shadow: 3px 3px 3px gray;
+
+        
+    }
+    
+    .galeria-img1{
+        grid-area: img1;
+    }
+    
+    .galeria-img2{
+        grid-area: img2;
+    }
+    
+    .galeria-img3{
+        grid-area: img3;
+    }
+    
+    .galeria-img4{
+        grid-area: img4;
+    }
+    
+    .galeria-img5{
+        grid-area: img5;
+    }
+    
+    .galeria-img6{
+        grid-area: img6;
+    }
+}
 }
