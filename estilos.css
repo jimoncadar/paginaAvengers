@@ -323,3 +323,14 @@ footer{
     }
 }
 }
+
+/* Formulario: */
+
+form{
+    margin: 150px 0;
+    width: 800px;
+    h1{
+        text-align: center;
+        padding: 10px;
+    }
+}
