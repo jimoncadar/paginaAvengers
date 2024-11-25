@@ -26,4 +26,14 @@ body{
     width: 150px;
     align-self: center;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.modo-dark__body{
+    background-color: rgba(0, 0, 0, 0.732);
+}
+
+.modo-dark__tarjeta{
+    background-color: rgba(26, 25, 25, 0.587);
+    color: white;
 }
