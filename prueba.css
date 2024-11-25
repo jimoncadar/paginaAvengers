@@ -1,0 +1,29 @@
+body{
+    background-color: #f4f4f4;
+}
+
+.contenedor{
+    width: 800px;
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor p{
+    line-height: 1.5;
+}
+
+.contenedor button{
+    background-color: darkgreen;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+    align-self: center;
+    margin-top: 10px;
+}
