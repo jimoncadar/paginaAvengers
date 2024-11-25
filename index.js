@@ -10,6 +10,5 @@ function mostrarNav(){
    else{
         nav.classList.add("mostrar");
    } */
-
-        nav.classList.toggle("mostrar");
+     nav.classList.toggle("mostrar");  
 }
