@@ -3,6 +3,10 @@
     --colorSecundario:#518CCA;
     --colorFondo:#f4f4f4;
     --colorTarjeta:#FFFFFF;
+
+    --colorDark__body:rgba(17, 17, 17, 0.83);
+    --colorDark__tarjeta:rgb(0, 0, 0);
+    --colorDark__textoTarjeta:white;
 } 
 
 *{
@@ -20,6 +24,7 @@ html{
 
 body{
     background-color: var(--colorFondo);
+    /* background-color: rgba(17, 17, 17, 0.83); */
     height: auto;
 }
 
@@ -102,15 +107,25 @@ main {
         margin: 62px 0 0 0;
         text-align: center;
         color: var(--colorPrimario);
+        /* color: white; */
         font-family: Avengeance;
         font-size: 64px;
     }
 
-    
+    .slide{
+        width: 1000px;
+        margin: 62px auto 25px auto;
+        z-index: -1;
+    }
+
+
     .tarjetaIntroduccion{
         width: 1000px;
         height: 304px;
         background-color: var(--colorTarjeta);
+        /* color: white; */
+        /* background-color: rgb(0, 0, 0); */
+        /* border: 1px solid white; */
         margin: 62px auto 25px auto;
         padding: 30px;
         display: flex;
