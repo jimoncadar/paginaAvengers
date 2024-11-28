@@ -3,10 +3,11 @@
     --colorSecundario:#518CCA;
     --colorFondo:#f4f4f4;
     --colorTarjeta:#FFFFFF;
+    --colorTextoTarjeta:#000;
 
-    --colorDark__body:rgba(17, 17, 17, 0.83);
-    --colorDark__tarjeta:rgb(0, 0, 0);
-    --colorDark__textoTarjeta:white;
+    /* --colorDark__body:rgba(17, 17, 17, 0.83); */
+    /* --colorDark__tarjeta:rgb(0, 0, 0); */
+    /* --colorDark__textoTarjeta:white; */
 } 
 
 *{
@@ -37,6 +38,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
     nav{
         /* height: 90px; */
         display: flex;
@@ -48,6 +50,22 @@ header
             text-decoration: none;
             font-size: 24px;
         }
+
+        
+    }
+
+    .btnDark{
+        background-color: var(--colorPrimario);
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+        height: 50px;
+        color: white;
+        box-shadow: 1px 1px 1px black;
+        position: fixed;
+        right: 30px;
+        top: 190px;
+        cursor: pointer;
     }
 
     .btnHamburguesa{
@@ -112,10 +130,15 @@ main {
         font-size: 64px;
     }
 
+    
+
     .slide{
         width: 1000px;
         margin: 62px auto 25px auto;
-        z-index: -1;
+        /* z-index: -1; */
+        img{
+            border-radius: 5px;
+        }
     }
 
 
@@ -155,6 +178,7 @@ main {
                 font-weight: lighter;
                 line-height: 1.8;
                 /* font-family: 'Comic'; */
+                color: var(--colorTextoTarjeta);
             }
         }
 
@@ -210,6 +234,7 @@ main {
                 font-weight: lighter;
                 line-height: 1.8;
                 /* font-family: 'Comic'; */
+                color: var(--colorTextoTarjeta);
             }
 
             .cajas{
@@ -264,6 +289,10 @@ main {
             margin-bottom: 12px;
         }
 
+        p{
+            color: var(--colorTextoTarjeta);
+        }
+
         .tarjetaUnionHeroes-contenido{
             width: 80%;
         }
@@ -303,6 +332,10 @@ main {
             border: none;
             border-radius: 5px;
             margin-bottom: 12px;
+        }
+
+        p{
+            color: var(--colorTextoTarjeta);
         }
 
         .tarjetaGrupoConstanteCambio-contenido{
@@ -361,11 +394,10 @@ footer{
             width: 100%;
             object-fit: cover;
             height: 100%;
-            box-shadow: 3px 3px 3px gray;
-            
+            /* box-shadow: 3px 3px 3px gray; */
             &:hover{
                 box-shadow: 0 0 3px 3px var(--colorPrimario);
-                transform: scale(99%);
+                /* transform: scale(101%); */
             }
         }
     
